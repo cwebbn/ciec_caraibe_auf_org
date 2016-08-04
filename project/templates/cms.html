@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static i18n cms_tags menu_tags sekizai_tags %}
+
+{% block title %}{% page_attribute "title" %}{% endblock title %}
+{% block description %}{% page_attribute "meta_description" %}{% endblock %}
+
+{% block content %}
+  <div class="col-md-12" id="content" style="background-color: white;">
+      <h2>{% page_attribute "title" %}</h2>
+      {% placeholder texte %}
+  </div>
+{% endblock content %}

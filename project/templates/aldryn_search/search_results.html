@@ -1,0 +1,33 @@
+{% extends "aldryn_search/base.html" %}
+{% load i18n standard_form %}
+
+{% block content_search %}
+<form action="." method="get" class="">
+	{% standard_widget form.q options custom_class='form-control input-large' placeholder=_('enter your search term') %}
+<input type="submit" class="btn pull-right">	
+</form>
+
+<br/>
+
+<div class="search-results">
+	<ul>
+		{% include "aldryn_search/includes/search_items.html" %}
+	</ul>
+</div>
+
+{% include "aldryn_search/includes/pagination.html" with obj_string=_('results') %}
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+{% endblock %}

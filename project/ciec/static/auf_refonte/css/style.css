@@ -1,0 +1,557 @@
+/*
+  Grid handling
+*/
+/*base css*/
+
+body{
+  background-color: #ccc;
+}
+.filtre{
+  list-style-type: none;
+  width: 100%;
+}
+.filtre li a{
+  display: block;
+  background-color: #8dbe23;
+  margin-top: 10px;
+  text-align: center;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+
+.img_poz{
+  padding-top: 55px;
+}
+.admin li.child{
+  list-style-type: none;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bolder;
+}
+.admin li.child a{
+  color : #f00;
+
+}
+.admin{
+  position: absolute; /* could be absolute */
+  top: 50px;
+  left: -80px;
+  z-index: 1000;
+  margin: auto;
+  width: 120px;
+  height: 30px;
+  background-color: #ffd500;
+  border-radius: 5px;
+}
+.mine{
+  background-color: white;
+}
+.bordure_actu{
+  border-bottom: 4px solid #cccccc;
+}
+/*.articles{
+  font-weight: bolder;
+  font-size: 35px;
+}*/
+.articles .col-xs-9 p{
+  text-align: justify;
+  font-size: large;
+  font-style: italic;
+}
+
+.articles h3{
+  font-weight: bolder;
+    font-size: 35px
+}
+
+.typePub img{
+  width: 100px;
+  padding-left: 30px;
+}
+
+.pdfs{
+  font-weight: bolder;
+  font-stretch: extra-condensed;
+  background: #7e378f;
+}
+  #inline_bar_top{
+  /*width: 100%;*/
+  height:40px;
+  background-color: #fff;
+  padding-top: 3px;
+}
+
+#inline_bar_top li{
+  float: right;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#inline_bar_top .imfp{
+  color : #AA0A2F;
+  text-transform: uppercase;
+}
+
+#inline_bar_top .imfp a{
+  color : #AA0A2F;
+}
+#navigation_bar{
+  background-color: #fff;
+  border-color: #fff;
+}
+
+#navigation_bar #menu_nav{
+    width:100%;
+}
+
+#navigation_bar #menu_nav li{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+
+#navigation_bar #menu_nav li a{
+  color: #AA0A2F;
+}
+
+#navigation_bar #menu_nav_scroll{
+    width:100%;
+    background-color: white;
+}
+
+#navigation_bar #menu_nav_scroll li{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 65px;
+}
+
+#navigation_bar #menu_nav_scroll li a{
+  color: #AA0A2F;
+}
+
+#contenu{
+  min-height: 350px;
+  /*border: 1px solid red;*/
+  padding-left: 220px;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#banderolle_row{
+  /*background: url(../images/barre-couleur.png) no-repeat right 30px;
+    padding-top: 15px;*/
+}
+.hr_bar{
+    width: 100%;
+    height:13px;
+    background-image: url("../images/barre-couleur.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cor_logo{
+  width :150px;
+  /*height: 100px;*/
+}
+.desc{
+  margin-top: 10px;
+
+}
+#corpuca{
+      width: 100%;
+      height: 83px;
+      background-image: url("../images/corpuca_logo.png");
+      background-position: right bottom;
+      background-repeat: no-repeat;
+}
+
+#search_dimension{
+  width: 400px;
+  margin: auto;
+}
+
+#search_dimension .input-group input, #search_dimension span{
+  display: block;
+  height: 60px;
+}
+
+#search_dimension .input-group span{
+  background-color: #8DBE23;
+}
+
+.input-group{
+  width: 100%;
+}
+
+.input-group-addon{
+  width:60px;
+  background-color: #8DBE23;
+}
+
+#proposition_btn {
+
+}
+
+#proposition_btn a{
+  display: block;
+  height: 60px;
+  text-align: center;
+  /*vertical-align: middle;*/
+  padding-top: 20px;
+  background-color: #8DBE23;
+}
+.cache{
+  display: none;
+}
+.affiche{
+  display: block;
+}
+
+.labo_title h1{
+  text-transform: uppercase;
+  color: #AA0A2F;
+  text-rendering: geometricPrecision;
+  font-weight: bolder;
+  background-color: #ccc;
+}
+
+
+
+#PiedPage{
+
+}
+
+#PiedPage ul{
+  margin-top: 100px;
+}
+
+
+#PiedPage img,#PiedPage ul{
+  float: left;
+  margin-left: 10px;
+  margin-top:10px;
+}
+
+#PiedPage ul li{
+  float:left;
+  margin-left: 30px;
+  list-style-type: none;
+  color:white;
+}
+
+/*Base css*/
+
+
+
+/*ARUCA Style
+Desing pour la partie ARUCA*/
+
+/*CSS for ARUCA's home with slidding effect*/
+
+/*Carousell handling*/
+/*Carousell handling*/
+/* carousel */
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+  top :60px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+  top :60px;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 300px;
+  height: 300px;
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/*Carousell handling*/
+
+.atikPub{
+  background: #cccccc;
+  border-radius: 2px;
+  /*width:25em;*/
+  /*padding: auto;*/
+  padding: 5px;
+  }
+
+
+/*Carousell handling Carousel with panel
+Carousell handling*/
+/* carousel */
+#panel-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#panel-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#panel-carousel .carousel-control.left
+{
+  left: -12px;
+  top :60px;
+}
+/* Next button  */
+#panel-carousel .carousel-control.right
+{
+  right: -12px !important;
+  top :60px;
+}
+/* Changes the position of the indicators */
+#panel-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#panel-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#panel-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#panel-carousel img
+{
+  width: 300px;
+  height: 300px;
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #panel-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #panel-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #panel-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #panel-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/*Carousell handling*/
+
+/*#minimal_txt img*/
+
+/*
+  Grid handling
+*/
+/*CSS for ARUCA's home with slidding effect*/
+/*pages styles*/
+#articles{
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 3px;
+
+}
+#articles .row .thumbnails{
+  border-color: #8DBE23;
+}
+
+
+
+/*Top search bar*/
+
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
+/*Top search bar*/
