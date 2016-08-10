@@ -5,7 +5,8 @@
   <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock title %} - CIEC</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
       <link rel="stylesheet" type="text/css" href="{% static 'auf_refonte/css/bootstrap.min.css' %}" />
       <link rel="stylesheet" type="text/css" href="{% static 'auf_refonte/css/style.css' %}" />
       <link rel="stylesheet" type="text/css" href="{% static 'auf_refonte/css/font-awesome.min.css' %}" />
@@ -73,9 +74,10 @@
       <div class="hr_bar"></div>
     <br />
 
-    {% block content %}{% endblock content %}
-
 	<div class="row">
+	      <div class="col-md-10 col-md-offset-1">
+                {% block content %}{% endblock content %}
+              </div>
 	      <div class="col-md-12" style="background: #101010">
 		<footer id="PiedPage">
 		  <img width="170" height="121" src="{% static 'auf_refonte/images/corpuca_logo_3.png' %}" alt="">
